@@ -50,8 +50,8 @@ project/
 1. **Clone the repo:**
 
 ```bash
-git clone https://github.com/yourusername/fitness-goals-tracker.git
-cd fitness-goals-tracker
+git clone https://github.com/cs2024id00018885/wt00018885.git
+cd wt00018885
 ```
 
 2. **Install dependencies:**
@@ -70,14 +70,6 @@ npm start
 
 Open your browser and go to [http://localhost:3000](http://localhost:3000)
 
-## 📸 Screenshots
-
-![Goals View](screenshots/goals-page.png)
-
 ## 📌 Course Info
 
 This project was created for the Web Technologies module (4BUIS011C), as part of a coursework assignment requiring a dynamic CRUD web application.
-
-## 📄 License
-
-MIT License
