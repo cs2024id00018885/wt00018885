@@ -1,0 +1,18 @@
+extends layout
+
+block content
+  h2 Edit Goal
+
+  if error
+    p.flash.error= error
+
+  form(action=`/goals/edit/${goal.id}`, method="POST")
+    label(for="title") Title:
+    input(type="text", name="title", id="title", value=goal.title, required)
+
+    label(for="description") Description:
+    textarea(name="description", id="description", rows="4", required)= goal.description
+
+    button(type="submit") Save Changes
+
+  a(href="/goals") ← Back to Goals

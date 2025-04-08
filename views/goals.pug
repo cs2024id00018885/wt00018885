@@ -1,0 +1,13 @@
+extends layout
+
+block content
+  h2 Your Fitness Goals
+  a.button(href="/goals/add") Add New Goal
+
+  ul.fade-in
+    each goal in goals
+      li
+        strong= goal.title
+        | : #{goal.description}
+        a(href=`/goals/edit/${goal.id}`) Edit
+        a.delete-link(href=`/goals/delete/${goal.id}`) Delete

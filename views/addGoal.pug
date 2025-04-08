@@ -1,0 +1,18 @@
+extends layout
+
+block content
+  h2 Add a New Fitness Goal
+
+  if error
+    p.flash.error= error
+
+  form(action="/goals/add", method="POST")
+    label(for="title") Title:
+    input(type="text", name="title", id="title", required)
+
+    label(for="description") Description:
+    textarea(name="description", id="description", rows="4", required)
+
+    button(type="submit") Add Goal
+
+  a(href="/goals") ← Back to Goals
